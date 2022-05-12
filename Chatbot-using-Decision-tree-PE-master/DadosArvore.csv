@@ -1,0 +1,126 @@
+ID,Pergunta,A,Nó A,B,Nó B
+1,Mais que 3 quartos?,SIM,2,NÃO,3
+2,Mais que 1 andar?,SIM,4,NÃO,5
+3,Nível de construção maior que 7?,SIM,6,NÃO,7
+4,Área construída maior que 2017 metros quadrados?,SIM,8,NÃO,9
+5,Nível de construção maior que 7?,SIM,10,NÃO,11
+6,Área construída maior que 2017 metros quadrados?,SIM,12,NÃO,13
+7,Área construída maior que 2017 metros quadrados?,SIM,14,NÃO,15
+8,Tem porão?,SIM,16,NÃO,17
+9,Tem porão?,SIM,18,NÃO,19
+10,Área do lote maior que 9566 metros quadrados?,SIM,20,NÃO,21
+11,Área construída maior que 2017 metros quadrados?,SIM,22,NÃO,23
+12,Mais que 1 banheiro?,SIM,24,NÃO,25
+13,NÓ FOLHA,Acima do valor de mercado.,,,
+14,NÓ FOLHA,Abaixo do valor de mercado.,,,
+15,Tem porão?,SIM,26,NÃO,27
+16,Nível de construção maior que 7?,SIM,28,NÃO,29
+17,Nível de construção maior que 7?,SIM,30,NÃO,31
+18,NÓ FOLHA,Abaixo do valor de mercado.,,,
+19,Estado de conservação maior que 3?,SIM,32,NÃO,33
+20,Mais que 1 banheiro?,SIM,34,NÃO,35
+21,Mais que 1 banheiro?,SIM,36,NÃO,37
+22,NÓ FOLHA,Abaixo do valor de mercado.,,,
+23,Área do lote maior que 9566 metros quadrados?,SIM,38,NÃO,39
+24,Área do lote maior que 9566 metros quadrados?,SIM,40,NÃO,41
+25,Mais que 1 andar?,SIM,42,NÃO,43
+26,Área do lote maior que 9566 metros quadrados?,SIM,44,NÃO,45
+27,Área do lote maior que 9566 metros quadrados?,SIM,46,NÃO,47
+28,,SIM,48,NÃO,49
+29,Estado de conservação maior que 3?,SIM,50,NÃO,51
+30,Estado de conservação maior que 3?,SIM,52,NÃO,53
+31,NÓ FOLHA,Abaixo do valor de mercado.,,,
+32,Área do lote maior que 9566 metros quadrados?,SIM,54,NÃO,55
+33,Área do lote maior que 9566 metros quadrados?,SIM,56,NÃO,57
+34,NÓ FOLHA,Abaixo do valor de mercado.,,,
+35,Estado de conservação maior que 3?,SIM,58,NÃO,59
+36,NÓ FOLHA,Abaixo do valor de mercado.,,,
+37,NÓ FOLHA,Abaixo do valor de mercado.,,,
+38,Tem porão?,SIM,60,NÃO,61
+39,Tem porão?,SIM,62,NÃO,63
+40,Tem porão?,SIM,64,NÃO,65
+41,NÓ FOLHA,Abaixo do valor de mercado.,,,
+42,Estado de conservação maior que 3?,SIM,66,NÃO,67
+43,Tem porão?,SIM,68,NÃO,69
+44,Estado de conservação maior que 3?,SIM,70,NÃO,71
+45,Estado de conservação maior que 3?,SIM,72,NÃO,73
+46,Mais que 1 andar?,SIM,74,NÃO,75
+47,Mais que 1 andar?,SIM,76,NÃO,77
+48,Estado de conservação maior que 3?,SIM,78,NÃO,79
+49,Estado de conservação maior que 3?,SIM,80,NÃO,81
+50,Área do lote maior que 9566 metros quadrados?,SIM,82,NÃO,83
+51,Área do lote maior que 9566 metros quadrados?,SIM,84,NÃO,85
+52,NÓ FOLHA,Abaixo do valor de mercado.,,,
+53,Área do lote maior que 9566 metros quadrados?,SIM,86,NÃO,87
+54,NÓ FOLHA,Abaixo do valor de mercado.,,,
+55,NÓ FOLHA,Abaixo do valor de mercado.,,,
+56,Nível de construção maior que 7?,SIM,88,NÃO,89
+57,Nível de construção maior que 7?,SIM,90,NÃO,91
+58,Área construída maior que 2017 metros quadrados?,SIM,92,NÃO,93
+59,NÓ FOLHA,Abaixo do valor de mercado.,,,
+60,Estado de conservação maior que 3?,SIM,94,NÃO,95
+61,NÓ FOLHA,Abaixo do valor de mercado.,,,
+62,Estado de conservação maior que 3?,SIM,96,NÃO,97
+63,NÓ FOLHA,,,,
+64,Estado de conservação maior que 3?,SIM,98,NÃO,99
+65,NÓ FOLHA,Abaixo do valor de mercado.,,,
+66,Área do lote maior que 9566 metros quadrados?,SIM,100,NÃO,101
+67,Tem porão?,SIM,102,NÃO,103
+68,Estado de conservação maior que 3?,SIM,104,NÃO,105
+69,NÓ FOLHA,Abaixo do valor de mercado.,,,
+70,NÓ FOLHA,Acima do valor de mercado.,,,
+71,NÓ FOLHA,Abaixo do valor de mercado.,,,
+72,NÓ FOLHA,Abaixo do valor de mercado.,,,
+73,NÓ FOLHA,Abaixo do valor de mercado.,,,
+74,Estado de conservação maior que 3?,SIM,106,NÃO,107
+75,NÓ FOLHA,Abaixo do valor de mercado.,,,
+76,Estado de conservação maior que 3?,SIM,108,NÃO,109
+77,NÓ FOLHA,Abaixo do valor de mercado.,,,
+78,Mais que 1 banheiro?,SIM,110,NÃO,111
+79,Mais que 1 banheiro?,SIM,112,NÃO,113
+80,Mais que 1 banheiro?,SIM,114,NÃO,115
+81,Mais que 1 banheiro?,SIM,116,NÃO,117
+82,Mais que 1 banheiro?,SIM,118,NÃO,119
+83,NÓ FOLHA,Abaixo do valor de mercado.,,,
+84,NÓ FOLHA,Abaixo do valor de mercado.,,,
+85,NÓ FOLHA,Abaixo do valor de mercado.,,,
+86,Mais que 1 banheiro?,SIM,120,NÃO,121
+87,Mais que 1 banheiro?,SIM,122,NÃO,123
+88,NÓ FOLHA,Abaixo do valor de mercado.,,,
+89,NÓ FOLHA,Abaixo do valor de mercado.,,,
+90,NÓ FOLHA,Abaixo do valor de mercado.,,,
+91,NÓ FOLHA,Abaixo do valor de mercado.,,,
+92,NÓ FOLHA,Na média do valor de mercado,,,
+93,NÓ FOLHA,Abaixo do valor de mercado.,,,
+94,NÓ FOLHA,Abaixo do valor de mercado.,,,
+95,NÓ FOLHA,Abaixo do valor de mercado.,,,
+96,NÓ FOLHA,Abaixo do valor de mercado.,,,
+97,NÓ FOLHA,Abaixo do valor de mercado.,,,
+98,NÓ FOLHA,Abaixo do valor de mercado.,,,
+99,NÓ FOLHA,Abaixo do valor de mercado.,,,
+100,NÓ FOLHA,Abaixo do valor de mercado.,,,
+101,Tem porão?,SIM,124,NÃO,125
+102,NÓ FOLHA,Na média do valor de mercado,,,
+103,NÓ FOLHA,Abaixo do valor de mercado.,,,
+104,NÓ FOLHA,Abaixo do valor de mercado.,,,
+105,NÓ FOLHA,Abaixo do valor de mercado.,,,
+106,NÓ FOLHA,Abaixo do valor de mercado.,,,
+107,NÓ FOLHA,Abaixo do valor de mercado.,,,
+108,NÓ FOLHA,Abaixo do valor de mercado.,,,
+109,NÓ FOLHA,Abaixo do valor de mercado.,,,
+110,NÓ FOLHA,Abaixo do valor de mercado.,,,
+111,NÓ FOLHA,Abaixo do valor de mercado.,,,
+112,NÓ FOLHA,Na média do valor de mercado,,,
+113,NÓ FOLHA,Abaixo do valor de mercado.,,,
+114,NÓ FOLHA,Abaixo do valor de mercado.,,,
+115,NÓ FOLHA,Abaixo do valor de mercado.,,,
+116,NÓ FOLHA,Abaixo do valor de mercado.,,,
+117,NÓ FOLHA,Abaixo do valor de mercado.,,,
+118,NÓ FOLHA,Abaixo do valor de mercado.,,,
+119,NÓ FOLHA,Abaixo do valor de mercado.,,,
+120,NÓ FOLHA,Abaixo do valor de mercado.,,,
+121,NÓ FOLHA,Abaixo do valor de mercado.,,,
+122,NÓ FOLHA,Abaixo do valor de mercado.,,,
+123,NÓ FOLHA,Abaixo do valor de mercado.,,,
+124,NÓ FOLHA,Abaixo do valor de mercado.,,,
+125,NÓ FOLHA,Abaixo do valor de mercado.,,,
