@@ -1,251 +1,251 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vendedor Hortin</title>
-	<link rel="icon" href="../../assets/img/hortin-logo.png">
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>Vendedor Hortin</title>
+		<link rel="icon" href="../../assets/img/hortin-logo.png">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="./header.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
-	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/select/1.3.4/css/select.dataTables.min.css">
-	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
-	<script src="./header.js"></script>
-	<script>
-		$("narbar").DataTable()
-	</script>
-</head>
-<body>
-	<div class="container header-navbar">
-		<nav class="navbar navbar-expand-lg">
-			<a class="navbar-brand">
-				<img class="logo" src="../../assets/img/hortin-logo.png">
-			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
-						<a class="nav-link active" id="_listaalerta.php">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link active">Area do Usuário</a>
-					</li>
-				</ul>
-				<span class="navbar-text">
-					Usuário atual: &nbsp;  
-				</span>
-				<div id="usuarioAtual">  </div>
-			</div>
-		</nav>
-	</div>
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="./header.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/select/1.3.4/css/select.dataTables.min.css">
+		<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+		<script src="./header.js"></script>
+		<script>
+			$("narbar").DataTable()
+		</script>
+	</head>
+	<body>
+		<div class="container header-navbar">
+			<nav class="navbar navbar-expand-lg">
+				<a class="navbar-brand">
+					<img class="logo" src="../../assets/img/hortin-logo.png">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link active" id="_listaalerta.php">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active">Area do Usuário</a>
+						</li>
+					</ul>
+					<span class="navbar-text">
+						Usuário atual: &nbsp;  
+					</span>
+					<div id="usuarioAtual">  </div>
+				</div>
+			</nav>
+		</div>
 
-	<!-- <div class="container"> -->
-		<div class="row">
-			<div class="col align-self-start">
+		<!-- <div class="container"> -->
+			<div class="row">
+				<div class="col align-self-start">
+				</div>
+				<div class="col align-self-center">
+				</div>
+				<div class="col align-self-end" style="margin-bottom: 10px" id="botoesVendedor">
+					<button class="btn btn-danger" style="color: white" onclick="deletarProduto();">Deletar</button>
+					<button class="btn btn-info" style="color: white" onclick="editarProduto();">Editar</button>
+					<button class="btn btn-primary" style="color: white"data-bs-toggle="modal" data-bs-target="#modalNovoProduto">Novo Produto</button>
+				</div>
 			</div>
-			<div class="col align-self-center">
-			</div>
-			<div class="col align-self-end" style="margin-bottom: 10px" id="botoesVendedor">
-				<button class="btn btn-danger" style="color: white" onclick="deletarProduto();">Deletar</button>
-				<button class="btn btn-info" style="color: white" onclick="editarProduto();">Editar</button>
-				<button class="btn btn-primary" style="color: white"data-bs-toggle="modal" data-bs-target="#modalNovoProduto">Novo Produto</button>
-			</div>
+		<!-- </div> -->
+	  <!-- Modal -->
+	  <div class="modal fade" id="modalNovoProduto" tabindex="-1" aria-labelledby="modalNovoProdutoLabel" aria-hidden="true">
+	    <div class="modal-dialog">
+	      <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="modalNovoProdutoLabel">Cadastro de novo produto</h5>
+		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 		</div>
-  	<!-- </div> -->
-  <!-- Modal -->
-  <div class="modal fade" id="modalNovoProduto" tabindex="-1" aria-labelledby="modalNovoProdutoLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalNovoProdutoLabel">Cadastro de novo produto</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            <form id="cadastroProduto">
-                    <label for="pNome">Nome do produto:</label>
-                    <input type="text" class="form-control" id="pNome" name="nomeProduto" autocomplete="off"><br><br>
-                    <label for="pDesc">Descrição:</label>
-                    <input type="text" class="form-control" id="pDesc" name="descricaoProduto" autocomplete="off"><br><br>
-                    <label for="pValor">Valor:</label>
-                    <input type="text" class="form-control" id="pValor" name="valorProduto" autocomplete="off"><br><br>
-                    <label for="pQuantidade">Quantidade:</label>
-                    <input type="number" class="form-control" id="pQuantidade" name="quantidadeProduto" ><br><br>
-            </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Fechar</button>
-          <button onclick="novoProduto();" type="button" class="btn btn-outline-primary">Salvar</button>
-        </div>
-        <br><br>
-      </div>
-    </div>
-  </div>
-	<table id="tabelaVendedor" class="display table table-striped" style="width:97%">
-        <thead>
-            <tr>
-                <th>Nome do Produto</th>
-                <th>Descrição</th>
-                <th>Valor unitário (R$)</th>
-                <th>Quantidade</th>
-				<th style='display:none;'>id</th>
-            </tr>
-        </thead>
-    </table>
-    
-	<div class="modal fade" id="modalEditarProduto" tabindex="-1" aria-labelledby="modalNovoProdutoLabel" aria-hidden="true">
-		<div class="modal-dialog">
-		  <div class="modal-content">
-			<div class="modal-header">
-			  <h5 class="modal-title" id="modalEditarProdutoLabel">Editando produto</h5>
-			  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-			</div>
-			<div class="modal-body">
-				<form id="editarProduto">
-						<label for="eNome">Nome do produto:</label>
-						<input type="text" class="form-control" id="eNome" name="nomeProduto" autocomplete="off"><br><br>
-						<label for="eDesc">Descrição:</label>
-						<input type="text" class="form-control" id="eDesc" name="descricaoProduto" autocomplete="off"><br><br>
-						<label for="eValor">Valor:</label>
-						<input type="text" class="form-control" id="eValor" name="valorProduto" autocomplete="off"><br><br>
-						<label for="eQuantidade">Quantidade:</label>
-						<input type="number" class="form-control" id="eQuantidade" name="quantidadeProduto" autocomplete="off"><br><br>
-				</form>
-			</div>
-			<div class="modal-footer">
-			  <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Fechar</button>
-			  <button onclick="salvarEdicao();" type="button" class="btn btn-outline-primary">Salvar</button>
-			</div>
-			<br><br>
-		  </div>
+		<div class="modal-body">
+		    <form id="cadastroProduto">
+			    <label for="pNome">Nome do produto:</label>
+			    <input type="text" class="form-control" id="pNome" name="nomeProduto" autocomplete="off"><br><br>
+			    <label for="pDesc">Descrição:</label>
+			    <input type="text" class="form-control" id="pDesc" name="descricaoProduto" autocomplete="off"><br><br>
+			    <label for="pValor">Valor:</label>
+			    <input type="text" class="form-control" id="pValor" name="valorProduto" autocomplete="off"><br><br>
+			    <label for="pQuantidade">Quantidade:</label>
+			    <input type="number" class="form-control" id="pQuantidade" name="quantidadeProduto" ><br><br>
+		    </form>
 		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Fechar</button>
+		  <button onclick="novoProduto();" type="button" class="btn btn-outline-primary">Salvar</button>
+		</div>
+		<br><br>
+	      </div>
+	    </div>
 	  </div>
+		<table id="tabelaVendedor" class="display table table-striped" style="width:97%">
+		<thead>
+		    <tr>
+			<th>Nome do Produto</th>
+			<th>Descrição</th>
+			<th>Valor unitário (R$)</th>
+			<th>Quantidade</th>
+					<th style='display:none;'>id</th>
+		    </tr>
+		</thead>
+	    </table>
 
-
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-</head>
-<body>
-    <div class="container-fluid row">
-        <div class="col-4">a</div>
-        <div class="col-4">b</div>
-        <div class="col-2">c</div>
-    </div>
-    
-	<div class="container">
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<a class="navbar-brand" href="../inicial/_paginainicial.php">
-				<img src="./hortin-logo.png">
-			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
-						<a class="nav-link active" href="_listaalerta.php" id="_listaalerta.php">Pedidos</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link active dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Gerencial</a>
-						<div class="dropdown-menu">
-							<a class="dropdown-item" href="_listaverba.php">Verbas</a>
-							<a class="dropdown-item" href="_listausuario.php">Usuários</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#" onclick="AbreResumo(<?php echo $_SESSION['NivelFluxo']; ?>)">Resumo Financeiro</a>
-						</div>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link active dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Administrativo</a>
-						<div class="dropdown-menu">
-						<a class="dropdown-item" href="_listalocais.php">Locais</a>
-						<a class="dropdown-item" href="_listafornecedor.php">Fornecedores</a>
-						<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#">Em implementação</a>
-						</div>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link active dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Relatórios</a>
-						<div class="dropdown-menu">
-							<a class="dropdown-item" href="#">Relatório 1</a>
-							<a class="dropdown-item" href="#">Relatório 2</a>
-							<a class="dropdown-item" href="#">Relatório 3</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#">Link isolado</a>
-						</div>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link active" href="_listalog.php">Logs</a>
-					</li>
-					<li class="nav-item dropdown">
-						<?php
-							include "../usuarios/_conecta.php";
-
-							$IdUsuario = $_SESSION['IdUsuario'];
-
-							$sql = "SELECT count(*) as NumNotificacoes FROM notificacoes WHERE IdUsuario = $IdUsuario AND Ativo = 1";
-							$busca = mysqli_query($conexaousuarios, $sql);
-
-							$array = mysqli_fetch_array($busca);
-							$NumNotificacoes = $array['NumNotificacoes'];
-						?>
-						<a class="nav-link active dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Notificações<span id="NumNotHead" numcomentarios="<?php echo $NumNotificacoes ?>" class="badge badge-pill badge-danger"><?php echo $NumNotificacoes ?></span></a>
-						<div class="dropdown-menu">
-							<a class="nav-link active" href="_listamensagens.php">Mensagens<span id="NumMsgHead" class="badge badge-pill badge-danger">0</span></a>
-							<a class="nav-link active" href="_listanotificacoes.php">Comentários<?php if($NumNotificacoes != 0) {?><span id="NumComentariosHead" class="badge badge-pill badge-danger"><?php echo $NumNotificacoes ?></span><?php } ?></a>
-						</div>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link active" href="_finaliza.php">Sair</a>
-					</li>
-				</ul>
-				<span class="navbar-text">
-					Usuário atual: <?php
-						if(!isset($_SESSION['login'])) {
-							session_start();
-							echo  $_SESSION['login'];
-							}
-						else
-							echo $_SESSION['login']; ?>
-				</span>
+		<div class="modal fade" id="modalEditarProduto" tabindex="-1" aria-labelledby="modalNovoProdutoLabel" aria-hidden="true">
+			<div class="modal-dialog">
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <h5 class="modal-title" id="modalEditarProdutoLabel">Editando produto</h5>
+				  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form id="editarProduto">
+							<label for="eNome">Nome do produto:</label>
+							<input type="text" class="form-control" id="eNome" name="nomeProduto" autocomplete="off"><br><br>
+							<label for="eDesc">Descrição:</label>
+							<input type="text" class="form-control" id="eDesc" name="descricaoProduto" autocomplete="off"><br><br>
+							<label for="eValor">Valor:</label>
+							<input type="text" class="form-control" id="eValor" name="valorProduto" autocomplete="off"><br><br>
+							<label for="eQuantidade">Quantidade:</label>
+							<input type="number" class="form-control" id="eQuantidade" name="quantidadeProduto" autocomplete="off"><br><br>
+					</form>
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Fechar</button>
+				  <button onclick="salvarEdicao();" type="button" class="btn btn-outline-primary">Salvar</button>
+				</div>
+				<br><br>
+			  </div>
 			</div>
-		</nav>
-	</div>
-</body>
-</html> -->
+		  </div>
+
+
+	</body>
+	</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- <!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>Document</title>
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	</head>
+	<body>
+	    <div class="container-fluid row">
+		<div class="col-4">a</div>
+		<div class="col-4">b</div>
+		<div class="col-2">c</div>
+	    </div>
+
+		<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<a class="navbar-brand" href="../inicial/_paginainicial.php">
+					<img src="./hortin-logo.png">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link active" href="_listaalerta.php" id="_listaalerta.php">Pedidos</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link active dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Gerencial</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="_listaverba.php">Verbas</a>
+								<a class="dropdown-item" href="_listausuario.php">Usuários</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#" onclick="AbreResumo(<?php echo $_SESSION['NivelFluxo']; ?>)">Resumo Financeiro</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link active dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Administrativo</a>
+							<div class="dropdown-menu">
+							<a class="dropdown-item" href="_listalocais.php">Locais</a>
+							<a class="dropdown-item" href="_listafornecedor.php">Fornecedores</a>
+							<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Em implementação</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link active dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Relatórios</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">Relatório 1</a>
+								<a class="dropdown-item" href="#">Relatório 2</a>
+								<a class="dropdown-item" href="#">Relatório 3</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Link isolado</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="_listalog.php">Logs</a>
+						</li>
+						<li class="nav-item dropdown">
+							<?php
+								include "../usuarios/_conecta.php";
+
+								$IdUsuario = $_SESSION['IdUsuario'];
+
+								$sql = "SELECT count(*) as NumNotificacoes FROM notificacoes WHERE IdUsuario = $IdUsuario AND Ativo = 1";
+								$busca = mysqli_query($conexaousuarios, $sql);
+
+								$array = mysqli_fetch_array($busca);
+								$NumNotificacoes = $array['NumNotificacoes'];
+							?>
+							<a class="nav-link active dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Notificações<span id="NumNotHead" numcomentarios="<?php echo $NumNotificacoes ?>" class="badge badge-pill badge-danger"><?php echo $NumNotificacoes ?></span></a>
+							<div class="dropdown-menu">
+								<a class="nav-link active" href="_listamensagens.php">Mensagens<span id="NumMsgHead" class="badge badge-pill badge-danger">0</span></a>
+								<a class="nav-link active" href="_listanotificacoes.php">Comentários<?php if($NumNotificacoes != 0) {?><span id="NumComentariosHead" class="badge badge-pill badge-danger"><?php echo $NumNotificacoes ?></span><?php } ?></a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="_finaliza.php">Sair</a>
+						</li>
+					</ul>
+					<span class="navbar-text">
+						Usuário atual: <?php
+							if(!isset($_SESSION['login'])) {
+								session_start();
+								echo  $_SESSION['login'];
+								}
+							else
+								echo $_SESSION['login']; ?>
+					</span>
+				</div>
+			</nav>
+		</div>
+	</body>
+	</html> -->
