@@ -100,7 +100,7 @@ while True:
             
     print("\nRESULTADO FINAL: ")        
     print(f'┌────────────────────────────────────────────────────────────┐\n'
-          f' O valor da casa está: {answer}                               \n'
+          f' O valor da  casa está: {answer}                               \n'
           f'└────────────────────────────────────────────────────────────┘\n')
                 
    
