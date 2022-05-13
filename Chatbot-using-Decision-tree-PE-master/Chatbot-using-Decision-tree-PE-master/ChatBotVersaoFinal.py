@@ -91,7 +91,7 @@ while True:
         question = opcoes[int(response)]
         answer = arvore.check_answer(question)
         if answer == False:
-            print("\nMe desculpe, não conheço essa opção, vamos tentar novamente? :)")
+            print("\nMe desculpe, não há essa opção, vamos tentar novamente? :)")
             count_erros+=1
         elif not is_obj(answer):
             break
