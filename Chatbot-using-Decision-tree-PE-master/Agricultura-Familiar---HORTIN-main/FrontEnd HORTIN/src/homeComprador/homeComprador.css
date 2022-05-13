@@ -1,33 +1,33 @@
-.logo {
-    width: 100px;
-    height: 90px;
-}
+    .logo {
+        width: 100px;
+        height: 90px;
+    }
 
-.header-navbar {
-    background-color: moccasin;
-    margin: 0px;
-    max-width: none;
-}
-#botaoCarrinho{
-    float: right;
-}
+    .header-navbar {
+        background-color: moccasin;
+        margin: 0px;
+        max-width: none;
+    }
+    #botaoCarrinho{
+        float: right;
+    }
 
-#botaoCarrinho:hover{
-    background-color: #00FFFF;
-}
+    #botaoCarrinho:hover{
+        background-color: #00FFFF;
+    }
 
-#divBotao{
-    text-align: right;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-right: 10rem;
-}
+    #divBotao{
+        text-align: right;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-right: 10rem;
+    }
 
-#botaoAddCarrinho:hover{
-    background-color: #00FFFF;
-}
+    #botaoAddCarrinho:hover{
+        background-color: #00FFFF;
+    }
 
-#botaoAddCarrinho img {
-    height: 4rem;  
-    width: 4rem;
-}
+    #botaoAddCarrinho img {
+        height: 4rem;  
+        width: 4rem;
+    }
