@@ -1,10 +1,10 @@
-.logo {
-    width: 100px;
-    height: 90px;
-}
+    .logo {
+        width: 100px;
+        height: 90px;
+    }
 
-.header-navbar {
-    background-color: moccasin;
-    margin: 0px;
-    max-width: none;
-}
+    .header-navbar {
+        background-color: moccasin;
+        margin: 0px;
+        max-width: none;
+    }
