@@ -1,27 +1,27 @@
-<div class="modal fade" id="modalEditarProduto" tabindex="-1" aria-labelledby="modalNovoProdutoLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalEditarProdutoLabel">Editando produto</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal fade" id="modalEditarProduto" tabindex="-1" aria-labelledby="modalNovoProdutoLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalEditarProdutoLabel">Editando produto</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="editarProduto">
+                        <label for="eNome">Nome do produto:</label>
+                        <input type="text" class="form-control" id="eNome" name="nomeProduto" autocomplete="off"><br><br>
+                        <label for="eDesc">Descrição:</label>
+                        <input type="text" class="form-control" id="eDesc" name="descricaoProduto" autocomplete="off"><br><br>
+                        <label for="eValor">Valor:</label>
+                        <input type="text" class="form-control" id="eValor" name="valorProduto" autocomplete="off"><br><br>
+                        <label for="eQuantidade">Quantidade:</label>
+                        <input type="number" class="form-control" id="eQuantidade" name="quantidadeProduto" autocomplete="off"><br><br>
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Fechar</button>
+              <button onclick="salvarEdicao();" type="button" class="btn btn-outline-primary">Salvar</button>
+            </div>
+            <br><br>
+          </div>
         </div>
-        <div class="modal-body">
-            <form id="editarProduto">
-                    <label for="eNome">Nome do produto:</label>
-                    <input type="text" class="form-control" id="eNome" name="nomeProduto" autocomplete="off"><br><br>
-                    <label for="eDesc">Descrição:</label>
-                    <input type="text" class="form-control" id="eDesc" name="descricaoProduto" autocomplete="off"><br><br>
-                    <label for="eValor">Valor:</label>
-                    <input type="text" class="form-control" id="eValor" name="valorProduto" autocomplete="off"><br><br>
-                    <label for="eQuantidade">Quantidade:</label>
-                    <input type="number" class="form-control" id="eQuantidade" name="quantidadeProduto" autocomplete="off"><br><br>
-            </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Fechar</button>
-          <button onclick="salvarEdicao();" type="button" class="btn btn-outline-primary">Salvar</button>
-        </div>
-        <br><br>
       </div>
-    </div>
-  </div>
