@@ -1,0 +1,179 @@
+{
+	"info": {
+		"_postman_id": "9c4d4323-5454-4b03-945c-4b2c63272405",
+		"name": "HORTIN",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Produto",
+			"item": [
+				{
+					"name": "Inserir Produto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nomeProduto\": \"Kiwi sem agrotoxico\",\r\n    \"valorProduto\": 2334,\r\n    \"descricaoProduto\": \"kiwi pelo Vini\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/produto/vendedor/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"produto",
+								"vendedor",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deletar Produto",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/produto/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"produto",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "atualizar Produto",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nomeProduto\": \"Banana Nanica organica\",\r\n    \"valorProduto\": 5,\r\n    \"descricaoProduto\": \"Banana plantada pela EMilly\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/produto/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"produto",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pega Produto Por Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/produto/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"produto",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pega Produtos por id vendedor",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nomeProduto\": \"Kiwi com agortoxico\",\r\n    \"valorProduto\": 2334,\r\n    \"descricaoProduto\": \"kiwi pela EMilly\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/produto/vendedor/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"produto",
+								"vendedor",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Vendedor",
+			"item": [
+				{
+					"name": "inserir Vendedor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\": \"Vini\",\r\n    \"email\": \"Vini@hotmail.com\",\r\n    \"celular\": \"(11) 933666666\",\r\n\r\n    \"enderecoRua\": \"rua aliados\",\r\n    \"enderecoNumero\":\"444\",\r\n    \"enderecoComplemento\": \"\",\r\n    \"enderecoBairro\" : \"Bangu\",\r\n    \"enderecoCidade\": \"Santo André\",\r\n    \"enderecoEstado\": \"São Paulo\",\r\n    \"enderecoPais\": \"Brasil\",\r\n    \"cep\": \"555555555\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/vendedor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vendedor"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
