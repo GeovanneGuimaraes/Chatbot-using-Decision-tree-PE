@@ -38,6 +38,7 @@ def rec_build_tree(linha):
     node.answerFalse = row["B"]
     return node
 
+
 def is_obj(obj):
     return False if type(obj).__name__ == "str" else True
 
